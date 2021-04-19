@@ -1,0 +1,14 @@
+
+
+version: "3.1"
+services:
+  postgres:
+    image: postgres:11-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: todoapp
+      POSTGRES_USER: todoapp
+      POSTGRES_DB: todoapp
+    ports:
+      - 5433:5433
+
